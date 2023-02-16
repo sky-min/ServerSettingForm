@@ -1,0 +1,5 @@
+name: ServerSettingFrom
+antigen: skymin\ServerSettingFrom
+api: 5.0.0
+version: 1.0.0
+author: skymin
