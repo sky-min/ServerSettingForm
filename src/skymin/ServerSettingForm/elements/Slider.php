@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace skymin\ServerSettingFrom\elements;
+namespace skymin\ServerSettingForm\elements;
 
 final class Slider implements Element{
 

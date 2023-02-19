@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace skymin\ServerSettingFrom;
+namespace skymin\ServerSettingForm;
 
 use Closure;
 use pocketmine\form\Form;
 use pocketmine\network\mcpe\protocol\ServerSettingsResponsePacket;
 use pocketmine\player\Player;
-use skymin\ServerSettingFrom\elements\Element;
-use skymin\ServerSettingFrom\elements\FormIcon;
+use skymin\ServerSettingForm\elements\Element;
+use skymin\ServerSettingForm\elements\FormIcon;
 use function json_encode;
 use const JSON_THROW_ON_ERROR;
 
@@ -46,7 +46,7 @@ abstract class ServerSettingForm implements Form{
 					$player->forms[$id] = $this;
 				}
 			},
-			null,
+			$this,
 			Player::class
 		)($player);
 	}
